@@ -4,11 +4,11 @@
 #include "raylib.h"
 
 #define COLLISION_DUMP 1
-#define OBJECTS_COUNT 10
+#define OBJECTS_COUNT 100
 #define VELOCITY_X 300
 #define VELOCITY_Y 300
 
-Vector2 OBJECT_SIZE = {100, 100};
+Vector2 OBJECT_SIZE = {30, 30};
 Vector2 GRAVITY     = {0, 10000};
 
 typedef struct object_t {
