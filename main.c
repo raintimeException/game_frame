@@ -24,8 +24,8 @@ object_t *create_objects()
 
     for (int i = 0; i < OBJECTS_COUNT; ++i) {
         Color color = {GetRandomValue(0, 255), GetRandomValue(0, 255), GetRandomValue(0, 255), 255};
-        objects[i].position.x = GetRandomValue(0, GetScreenWidth());
-        objects[i].position.y = GetRandomValue(0, GetScreenHeight());
+        objects[i].position.x = GetRandomValue(0 + OBJECT_SIZE.x, GetScreenWidth());
+        objects[i].position.y = GetRandomValue(0 + OBJECT_SIZE.y, GetScreenHeight());
         objects[i].velocity.x = VELOCITY_X;
         objects[i].velocity.y = VELOCITY_Y;
         objects[i].color      = color;
